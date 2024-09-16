@@ -1,33 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
-<script src="https://cdn.tailwindcss.com"></script>
-<link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style/style.css" />
     <title>Document</title>
-</head>
-<body>
-<main class="bg-[#010313] bg-[url('images/background.png')] min-h-screen  bg-no-repeat bg-center ">
-    <!-- alpha home -->
-    <section class="home flex justify-center items-center min-h-screen hidden">
-       <div class="text-white  flex items-center flex-col">
-        <h1 class="text-[170px] font-semibold">ALPHABET CLASH</h1>
-        <p class="text-[26px] mb-14">Unleash Your Keyboard Kung Fu : Press “Enter” to Play</p>
-        <button class="btn bg-white text-black hover:text-white px-8">Play Now</button>
-       </div> 
-    </section>
-    <!-- alpha play groun -->
-    <section>
-      <div></div>  
-      <div></div>  
-      <div></div>  
-    </section>
-    <section class="play-ground">
+  </head>
+  <body>
+    <main
+      class="bg-[#010313] bg-[url('images/background.png')] min-h-screen bg-no-repeat bg-center"
+    >
+      <!-- alpha home -->
+      <section
+        class="home flex justify-center items-center min-h-screen hidden"
+      >
+        <div class="text-white flex items-center flex-col">
+          <h1 class="text-[170px] font-semibold">ALPHABET CLASH</h1>
+          <p class="text-[26px] mb-14">
+            Unleash Your Keyboard Kung Fu : Press “Enter” to Play
+          </p>
+          <button class="btn bg-white text-black hover:text-white px-8">
+            Play Now
+          </button>
+        </div>
+      </section>
+      <!-- alpha play groun -->
 
-    </section>
-    <section class="score"></section>
-</main>
-</body>
+      <section class="play-ground">
+        <!-- screen -->
+        <div class="flex flex-col items-center pt-24">
+          <div class="screen artboard artboard-horizontal phone-6">
+            <div class="flex justify-center  ">
+              <p class="px-8 py-4 bg-black rounded-b-xl">
+                Don't watch keyboard while playing...
+              </p>
+            </div>
+            <div class="flex justify-center items-center h-full">
+                <p class="text-black text-9xl font-bold">Y</p>
+            </div>
+          </div>
+        </div>
+        <div></div>
+        <div >
+            <button class="btn">btn</button>
+            <button class="btn">btn</button>
+        </div>
+     
+      </section>
+      <section class="score"></section>
+    </main>
+  </body>
 </html>
