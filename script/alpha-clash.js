@@ -1,13 +1,11 @@
-
 function continueGame(){
-    const alphabet = getRandomAlphabet()
-    console.log(alphabet )
-    const currentAlphabet = document.getElementById("current-alphabet")
-    currentAlphabet.innerText = alphabet
-    setBackgroundColorById(alphabet) 
+    const alphabet = getARandomAlphabet();
+    const currentAlphabetElement = document.getElementById('current-alphabet');
+    currentAlphabetElement.innerText = alphabet;
+    setBackgroundColorById(alphabet);
 }
 function play(){
-    hideElementsById('home-screen')
-    showElementById('play-ground')
-    continueGame()
+    hideElementById('home-screen');
+    showElementById('play-ground');
+    continueGame();
 }
