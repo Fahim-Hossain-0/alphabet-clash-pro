@@ -5,21 +5,21 @@ function handleKeyboardButtonPress(event) {
     const expectedAlphabet = currentAlphabet.toLowerCase()
 
     if (playerPressed === expectedAlphabet) {
-        const currentScoreElement = document.getElementById('current-score')
-        const currentScoreText = currentScoreElement.innerText
-        const currentScore = parseInt(currentScoreText)
-        const newScore = currentScore + 1;
-        currentScoreElement.innerText = newScore;
-
+        const currentScore = getTextElementValueById('current-score')
+        const updateScore = currentScore + 1
+        setTextElementValueById('current-score',updateScore)
         removeBackgroundColorById(expectedAlphabet)
         continueGame()
     }
     else {
-        const currentLifeElement = document.getElementById('curren-life')
-        const currentLifeText = currentLifeElement.innerText
-        const currentText = parseInt(currentLifeText)
-        const newLife = currentText - 1
-        currentLifeElement.innerText = newLife
+        const currentLife = getTextElementValueById('current-life')
+        const updateLife = currentLife - 1
+        setTextElementValueById('current-life',updateLife)
+        // const currentLifeElement = document.getElementById('current-life')
+        // const currentLifeText = currentLifeElement.innerText
+        // const currentText = parseInt(currentLifeText)
+        // const newLife = currentText - 1
+        // currentLifeElement.innerText = newLife
     }
 }
 
