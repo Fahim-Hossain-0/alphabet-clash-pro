@@ -1,5 +1,8 @@
 function handleKeyboardButtonPress(event) {
     const playerPressed = event.key
+    if(playerPressed==='Escape'){
+        gameOver()
+    }
     const currentAlphabetElement = document.getElementById('current-alphabet')
     const currentAlphabet = currentAlphabetElement.innerText;
     const expectedAlphabet = currentAlphabet.toLowerCase()
@@ -20,10 +23,7 @@ function handleKeyboardButtonPress(event) {
         }
     }
 }
-
 document.addEventListener('keyup', handleKeyboardButtonPress)
-
-
 function play() {
     hideElementById('home-screen');
     hideElementById('score')
@@ -45,4 +45,7 @@ function gameOver(){
     const finalScore = getTextElementValueById('current-score')
     console.log(finalScore)
     setTextElementValueById('final-score',finalScore)
+    const currentAlphabet = getElementTextById('current-alphabet')
+    console.log( "player",currentAlphabet)
+    removeBackgroundColorById(currentAlphabet)
 }
