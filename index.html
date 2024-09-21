@@ -84,7 +84,7 @@
           <button class="btn bg-[#894189] rounded-[30px]">
             Life
             <img src="images/Group 23.svg" alt="" />
-            <span id="current-life">1</span>
+            <span id="current-life">6</span>
           </button>
           <button class="btn bg-[#360490] rounded-[30px] text-white hover:text-black">
             Score
@@ -95,13 +95,13 @@
       </div>
     </section>
     <!-- score -->
-    <section class="score flex items-center justify-center min-h-screen hidden">
+    <section id="score" class="flex items-center justify-center min-h-screen hidden">
       <div class="flex justify-center items-center w-96 h-72 score-container">
         <div class="text-white flex flex-col items-center">
           <h2 class="text-[64px] font-extrabold mb-4">
-            Score : <span class="font-medium">14</span>
+            Score : <span id="final-score" class="font-medium">0</span>
           </h2>
-          <button class="btn hover:bg-slate-900 hover:text-white hover:border-none w-2/4">
+          <button onclick="play()" class="btn hover:bg-slate-900 hover:text-white hover:border-none w-2/4">
             Play Now
           </button>
           <p class="mt-4">practic make you pro</p>
